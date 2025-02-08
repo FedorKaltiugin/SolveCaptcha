@@ -23,5 +23,7 @@ To start training, testing, and predicting captchas, simply run:
 python main.py
 
 📊 Training Results
+
 ![Test Accuracy](https://github.com/FedorKaltiugin/SolveCaptcha/blob/main/1.PNG)
+
 ![Example of using the model for prediction](https://github.com/FedorKaltiugin/SolveCaptcha/blob/main/2.PNG)
