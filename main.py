@@ -21,14 +21,7 @@ max_captcha_length = 5
 
 def preprocess_image(image_path):
     """Loads, normalizes, and preprocesses an image."""
-    if not os.path.exists(image_path):
-        print(f"⚠️ Error: File '{image_path}' not found.")
-        return None
-
     image = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
-    if image is None:
-        print(f"⚠️ Error loading: {image_path}")
-        return None
 
     # Invert colors if the background is dark
     if np.mean(image) < 127:
